@@ -25,6 +25,9 @@ const items=sec=>sec.groups.flatMap(g=>g.items);
 const allItems=()=>CL.sections.flatMap(items);
 const count=list=>{const c={ok:0,bad:0,na:0,pend:0};list.forEach(i=>{const m=S.marks[i.id];m?c[m]++:c.pend++});return c};
 
+let stT=0;
+function stuck(){stT=0;const s=document.getElementById('navsent'),n=document.querySelector('nav.chips');if(s&&n)n.classList.toggle('stuck',s.getBoundingClientRect().top<-1)}
+addEventListener('scroll',()=>{if(!stT)stT=requestAnimationFrame(stuck)},{passive:true});
 async function init(){
   S=load();lang=pick();
   CL=await (await fetch('checklist.json')).json();
@@ -103,7 +106,7 @@ function render(){
 <section class="card prog" aria-labelledby="h-prog"><div class="ph"><h2 id="h-prog">${esc(t('progress'))}</h2><b class="ppct" data-g="pct">${Math.round(done/tot.length*100)}%</b><span class="muted">${esc(t('completed'))} · <span data-g="done">${done}</span> ${esc(t('of'))} ${tot.length}</span></div>
 <div class="sbar" id="gbar" role="progressbar" aria-labelledby="h-prog" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(done/tot.length*100)}" aria-valuetext="${esc(progText(c,tot.length))}">${segsHTML(c,tot.length,true)}</div>
 <ul class="legend" data-g="legend">${legendHTML(c,tot.length)}</ul></section>
-<nav class="chips" aria-label="${esc(t('nav'))}"><div class="mini"><b data-g="pct2">${Math.round(done/tot.length*100)}%</b><div class="sbar" id="gbar2" aria-hidden="true">${segsHTML(c,tot.length,true)}</div></div><div class="row">${CL.sections.map((s,i)=>`<a href="#sec-${s.id}" data-nav="${s.id}">${i+1} ${esc(T.sec[s.id].t)} <b data-chip="${s.id}">${chip(s)}</b></a>`).join('')}<a href="#summary">📋 ${esc(t('summary'))}</a></div></nav>
+<i id="navsent" aria-hidden="true"></i><nav class="chips" aria-label="${esc(t('nav'))}"><div class="mini"><b data-g="pct2">${Math.round(done/tot.length*100)}%</b><div class="sbar" id="gbar2" aria-hidden="true">${segsHTML(c,tot.length,true)}</div></div><div class="row">${CL.sections.map((s,i)=>`<a href="#sec-${s.id}" data-nav="${s.id}">${i+1} ${esc(T.sec[s.id].t)} <b data-chip="${s.id}">${chip(s)}</b></a>`).join('')}<a href="#summary">📋 ${esc(t('summary'))}</a></div></nav>
 <aside class="privacy" role="note"><p><span aria-hidden="true">🔒</span> ${esc(t('privacy'))}</p><p><span aria-hidden="true">ℹ️</span> ${esc(t('disclaimer'))}</p></aside>
 <section class="card" aria-labelledby="h-veh"><h2 id="h-veh">${esc(t('vehicle'))}</h2>
 <div class="grid"><label class="f">${esc(t('plate'))}<input type="text" id="plate" value="${esc(S.plate)}" autocomplete="off" autocapitalize="characters" spellcheck="false"></label>
@@ -119,7 +122,7 @@ ${tipsHTML('after','🔧 '+t('after'),T.after)}
 <p class="muted" style="text-align:center">${esc(t('pdfHint'))}</p>
 <footer><p>🔒 ${esc(t('privacy'))}</p><p>ℹ️ ${esc(t('disclaimer'))}</p><p>${esc(t('credit'))} <a href="https://pedidostesla.pages.dev/checklist" target="_blank" rel="noopener noreferrer">pedidostesla.pages.dev/checklist ↗</a></p><p>✔ ${esc(t('offline'))} · ${esc(t('editing'))}</p></footer>`;
   setStatus(status,true);syncPills();
-  scrollTo(0,y);if(fo){const e=document.getElementById(fo);e&&e.focus&&e.focus()}
+  scrollTo(0,y);stuck();if(fo){const e=document.getElementById(fo);e&&e.focus&&e.focus()}
 }
 const chip=s=>{const l=items(s);return `${l.length-count(l).pend}/${l.length}`};
 const statsHTML=c=>`<span class="pill ok">✔ ${esc(t('ok'))} ${c.ok}</span><span class="pill bad">⚠ ${esc(t('bad'))} ${c.bad}</span><span class="pill">– ${esc(t('na'))} ${c.na}</span><span class="pill">☐ ${esc(t('pending'))} ${c.pend}</span>`;
