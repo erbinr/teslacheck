@@ -32,8 +32,16 @@ async function init(){
   document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')flush()});
   document.addEventListener('focusout',flush,true);
   matchMedia('(prefers-color-scheme:dark)').addEventListener&&matchMedia('(prefers-color-scheme:dark)').addEventListener('change',()=>{if(curTheme()==='auto')theme('auto')});
-  if('serviceWorker' in navigator&&location.protocol!=='file:')navigator.serviceWorker.register('sw.js').catch(()=>{});
+  if('serviceWorker' in navigator&&location.protocol!=='file:')swInit();
   addEventListener('beforeprint',buildPrint);
+}
+function swInit(){
+  const had=!!navigator.serviceWorker.controller;let rl=false;
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(!had||rl)return;rl=true;flush();location.reload()});
+  navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(r=>{
+    r.update().catch(()=>{});
+    document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')r.update().catch(()=>{})});
+  }).catch(()=>{});
 }
 async function setLang(l,first){
   lang=l;T=await (await fetch(`i18n/${l}.json`)).json();

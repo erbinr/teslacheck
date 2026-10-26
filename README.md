@@ -4,7 +4,7 @@ Checklist PWA (es / pt / en) para revisar un Tesla Model 3 el día de la entrega
 
 ## Privacidad
 
-**La app no comunica ningún dato.** Todo se guarda en `localStorage` del dispositivo. Sin analítica, sin cookies, sin llamadas de red salvo cargar la propia app (la CSP en `_headers` lo impone). Funciona offline tras la primera carga (service worker cache-first).
+**La app no comunica ningún dato.** Todo se guarda en `localStorage` del dispositivo. Sin analítica, sin cookies, sin llamadas de red salvo cargar la propia app (la CSP en `_headers` lo impone). Funciona offline tras la primera carga (service worker red-primero con respaldo en caché).
 
 ## Aviso legal
 
@@ -27,7 +27,7 @@ node tools/check.mjs          # i18n completo en es/pt/en, cobertura de checklis
 ```
 
 Estructura: `checklist.json` (secciones, grupos, ids), `i18n/*.json` (textos), `app.js`, `styles.css` (incluye `@media print`), `sw.js`, `manifest.webmanifest`, `icons/`.
-Al cambiar cualquier archivo servido, sube `VERSION` en `sw.js` y añade nuevos archivos a `ASSETS`.
+Al cambiar cualquier archivo servido, añade nuevos archivos a `ASSETS`.
 
 ## Despliegue (Cloudflare Pages)
 
