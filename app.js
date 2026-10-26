@@ -114,7 +114,7 @@ function render(){
 ${tipsHTML('prep','💡 '+t('before'),T.prep)}
 ${CL.sections.map(secHTML).join('')}
 ${tipsHTML('after','🔧 '+t('after'),T.after)}
-<section class="card" id="summary" aria-labelledby="h-sum"><h2 id="h-sum">${esc(t('summary'))}</h2><div data-g="stats2">${statsHTML(c)}</div><h3 style="margin:.9rem 0 0;font-size:.95rem">${esc(t('issuesTitle'))}</h3><div data-g="issues">${issuesHTML()}</div></section>
+<section class="card" id="summary" aria-labelledby="h-sum"><h2 id="h-sum">${esc(t('summary'))}</h2><div class="stats" data-g="stats2">${statsHTML(c)}</div><h3 style="margin:.9rem 0 0;font-size:.95rem">${esc(t('issuesTitle'))}</h3><div data-g="issues">${issuesHTML()}</div></section>
 <div class="actions"><button type="button" class="btn primary" data-act="pdf">🖨 ${esc(t('pdf'))}</button><button type="button" class="btn danger" data-act="reset">↺ ${esc(t('reset'))}</button></div>
 <p class="muted" style="text-align:center">${esc(t('pdfHint'))}</p>
 <footer><p>🔒 ${esc(t('privacy'))}</p><p>ℹ️ ${esc(t('disclaimer'))}</p><p>${esc(t('credit'))} <a href="https://pedidostesla.pages.dev/checklist" target="_blank" rel="noopener noreferrer">pedidostesla.pages.dev/checklist ↗</a></p><p>✔ ${esc(t('offline'))} · ${esc(t('editing'))}</p></footer>`;
