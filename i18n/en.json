@@ -59,7 +59,14 @@
   "itemsOf": "items",
   "about": "About",
   "noteToggle": "Add note",
-  "editing": "Changes saved on this device"
+  "editing": "Changes saved on this device",
+  "saved": "Saved",
+  "saving": "Saving…",
+  "saveShort": "Not saved",
+  "saveFail": "⚠ Cannot save on this device (storage full, blocked or private mode). Your data is NOT being saved: generate the PDF or take screenshots before closing.",
+  "disclaimer": "Not affiliated with Tesla, Inc. This is only a help and suggestion guide: the authors accept no responsibility for anything, including decisions made, undetected defects, errors or omissions, or use of this information. Always confirm with Tesla and official sources.",
+  "completed": "completed",
+  "pendingOne": "Pending"
  },
  "sec": {
   "prep": {

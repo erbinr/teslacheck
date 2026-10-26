@@ -1,5 +1,5 @@
 // Service worker: cache-first con precache completo. Sube VERSION al cambiar cualquier archivo.
-const VERSION='v1';
+const VERSION='v2';
 const CACHE='teslacheck-'+VERSION;
 const ASSETS=['./','index.html','styles.css','app.js','theme.js','checklist.json','i18n/es.json','i18n/pt.json','i18n/en.json','manifest.webmanifest','favicon.svg','icons/favicon-32.png','icons/icon-192.png','icons/icon-512.png','icons/maskable-512.png','icons/apple-touch-icon.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()))});

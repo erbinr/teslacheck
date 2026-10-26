@@ -59,7 +59,14 @@
   "itemsOf": "itens",
   "about": "Sobre",
   "noteToggle": "Adicionar nota",
-  "editing": "Alterações guardadas neste dispositivo"
+  "editing": "Alterações guardadas neste dispositivo",
+  "saved": "Guardado",
+  "saving": "A guardar…",
+  "saveShort": "Não guardado",
+  "saveFail": "⚠ Não é possível guardar neste dispositivo (armazenamento cheio, bloqueado ou modo privado). Os seus dados NÃO estão a ser guardados: gere o PDF ou faça capturas antes de fechar.",
+  "disclaimer": "Não é afiliada à Tesla, Inc. É apenas um guia de ajuda e sugestão: os autores não se responsabilizam por nada, nem por decisões tomadas, defeitos não detetados, erros ou omissões, nem pela utilização desta informação. Confirme sempre com a Tesla e as fontes oficiais.",
+  "completed": "concluído",
+  "pendingOne": "Pendente"
  },
  "sec": {
   "prep": {
