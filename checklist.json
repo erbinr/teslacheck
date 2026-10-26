@@ -1,0 +1,363 @@
+{
+ "sections": [
+  {
+   "id": "prep",
+   "groups": [
+    {
+     "id": "g-prep",
+     "items": [
+      {
+       "id": "P01"
+      },
+      {
+       "id": "P02"
+      },
+      {
+       "id": "P03"
+      },
+      {
+       "id": "P04"
+      },
+      {
+       "id": "P05"
+      },
+      {
+       "id": "P06"
+      }
+     ]
+    },
+    {
+     "id": "g-docs",
+     "items": [
+      {
+       "id": "D01",
+       "src": "https://www.tesla.com/pt_pt/support/faq",
+       "added": true
+      },
+      {
+       "id": "D02",
+       "src": "https://www.reddit.com/r/TeslaPortugal/comments/1wdc5ct/how_many_days_before_delivery_does_tesla_register/",
+       "added": true
+      },
+      {
+       "id": "D03",
+       "src": "https://www.reddit.com/r/TeslaPortugal/comments/1wps210/duvida_entrega_hoje_as_1500documentos/",
+       "added": true
+      },
+      {
+       "id": "D04",
+       "src": "https://www.reddit.com/r/TeslaPortugal/comments/1wps210/duvida_entrega_hoje_as_1500documentos/",
+       "added": true
+      },
+      {
+       "id": "D05",
+       "src": "https://www.reddit.com/r/TeslaPortugal/comments/1wps210/duvida_entrega_hoje_as_1500documentos/",
+       "added": true
+      },
+      {
+       "id": "D06",
+       "src": "https://www.abstractocean.com/apps/delivery-checklist/model-3",
+       "added": true
+      },
+      {
+       "id": "D07",
+       "src": "https://www.reddit.com/r/TeslaPortugal/comments/1uf7ga7/modelo_y_standard_entrega_hoje/",
+       "added": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ext",
+   "groups": [
+    {
+     "id": "g-ext",
+     "items": [
+      {
+       "id": "E01"
+      },
+      {
+       "id": "E02"
+      },
+      {
+       "id": "E03"
+      },
+      {
+       "id": "E04"
+      },
+      {
+       "id": "E05"
+      },
+      {
+       "id": "E06"
+      },
+      {
+       "id": "E07"
+      },
+      {
+       "id": "E08"
+      },
+      {
+       "id": "E09"
+      },
+      {
+       "id": "E10"
+      },
+      {
+       "id": "E11"
+      },
+      {
+       "id": "E12",
+       "src": "https://www.abstractocean.com/apps/delivery-checklist/model-3",
+       "added": true
+      },
+      {
+       "id": "E13",
+       "src": "https://www.reddit.com/r/TeslaPortugal/comments/1uf7ga7/modelo_y_standard_entrega_hoje/",
+       "added": true
+      },
+      {
+       "id": "E14",
+       "src": "https://service.tesla.com/docs/Model3/ServiceManual/en-us/GUID-C24C6004-94BF-4099-8681-8D6598EE6E50.html",
+       "added": true
+      }
+     ]
+    },
+    {
+     "id": "g-int",
+     "items": [
+      {
+       "id": "I01"
+      },
+      {
+       "id": "I02"
+      },
+      {
+       "id": "I03"
+      },
+      {
+       "id": "I04"
+      },
+      {
+       "id": "I05"
+      },
+      {
+       "id": "I06"
+      },
+      {
+       "id": "I07"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "func",
+   "groups": [
+    {
+     "id": "g-ctl",
+     "items": [
+      {
+       "id": "F01"
+      },
+      {
+       "id": "F02"
+      },
+      {
+       "id": "F03"
+      },
+      {
+       "id": "F04"
+      },
+      {
+       "id": "F05"
+      },
+      {
+       "id": "F06"
+      },
+      {
+       "id": "F07"
+      },
+      {
+       "id": "F08"
+      },
+      {
+       "id": "F09"
+      },
+      {
+       "id": "F10"
+      }
+     ]
+    },
+    {
+     "id": "g-seat",
+     "items": [
+      {
+       "id": "F11"
+      },
+      {
+       "id": "F12"
+      },
+      {
+       "id": "F13"
+      },
+      {
+       "id": "F14"
+      },
+      {
+       "id": "F15"
+      },
+      {
+       "id": "F16"
+      },
+      {
+       "id": "F17"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "groups": [
+    {
+     "id": "g-scr",
+     "items": [
+      {
+       "id": "T01"
+      },
+      {
+       "id": "T02"
+      },
+      {
+       "id": "T03"
+      },
+      {
+       "id": "T04"
+      },
+      {
+       "id": "T05"
+      },
+      {
+       "id": "T06"
+      },
+      {
+       "id": "T07"
+      },
+      {
+       "id": "T08"
+      },
+      {
+       "id": "T09",
+       "src": "https://www.abstractocean.com/apps/delivery-checklist/model-3",
+       "added": true
+      },
+      {
+       "id": "T10",
+       "src": "https://www.abstractocean.com/apps/delivery-checklist/model-3",
+       "added": true
+      },
+      {
+       "id": "T11",
+       "src": "https://www.accessoriesfortesla.com/post/ultimate-tesla-delivery-checklist-for-2026-highland-and-juniper-models",
+       "added": true
+      }
+     ]
+    },
+    {
+     "id": "g-chg",
+     "items": [
+      {
+       "id": "C01"
+      },
+      {
+       "id": "C02"
+      },
+      {
+       "id": "C03"
+      },
+      {
+       "id": "C04"
+      },
+      {
+       "id": "A01"
+      },
+      {
+       "id": "A02"
+      },
+      {
+       "id": "A03"
+      },
+      {
+       "id": "A04"
+      },
+      {
+       "id": "A05"
+      },
+      {
+       "id": "A06",
+       "src": "https://www.reddit.com/r/teslamotors/comments/17ixfjr/looks_like_new_model_3s_highland_are_coming_with/",
+       "added": true
+      },
+      {
+       "id": "A07",
+       "src": "https://teslaowners.uk/new-car-collection-checklist/",
+       "added": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "groups": [
+    {
+     "id": "g-end",
+     "items": [
+      {
+       "id": "S01"
+      },
+      {
+       "id": "S02"
+      },
+      {
+       "id": "S03"
+      },
+      {
+       "id": "S04"
+      },
+      {
+       "id": "T12",
+       "src": "https://www.reddit.com/r/TeslaPortugal/comments/1w5q5jp/feedback_de_levantamentos_recentes_pneus_giti/",
+       "added": true
+      },
+      {
+       "id": "S05"
+      },
+      {
+       "id": "S06",
+       "src": "https://www.reddit.com/r/TeslaPortugal/comments/1w5q5jp/feedback_de_levantamentos_recentes_pneus_giti/",
+       "added": true
+      },
+      {
+       "id": "S07",
+       "src": "https://www.abstractocean.com/apps/delivery-checklist/model-3",
+       "added": true
+      },
+      {
+       "id": "S08",
+       "src": "https://www.abstractocean.com/apps/delivery-checklist/model-3",
+       "added": true
+      },
+      {
+       "id": "S09",
+       "src": "https://www.reddit.com/r/TeslaPortugal/comments/1uf7ga7/modelo_y_standard_entrega_hoje/",
+       "added": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

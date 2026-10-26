@@ -1,0 +1,483 @@
+{
+ "ui": {
+  "title": "Tesla Delivery Checklist",
+  "subtitle": "Vistoria do carro no dia da entrega",
+  "privacy": "Esta app não comunica nenhum dado: tudo fica guardado apenas neste dispositivo. Sem análise nem chamadas de rede, exceto carregar a própria app.",
+  "vehicle": "Veículo",
+  "plate": "Matrícula",
+  "vin": "VIN (chassis)",
+  "custom": "Campos personalizados",
+  "addField": "Adicionar campo",
+  "fieldName": "Nome do campo",
+  "fieldValue": "Valor",
+  "removeField": "Eliminar campo",
+  "customEmpty": "Sem campos personalizados. Adiciona, por exemplo, centro, consultor ou quilometragem.",
+  "before": "Antes de ir",
+  "after": "Depois da entrega",
+  "progress": "Progresso",
+  "done": "feitos",
+  "of": "de",
+  "ok": "OK",
+  "bad": "Problema",
+  "na": "N/A",
+  "note": "Nota",
+  "notePh": "Descreve o problema ou adiciona uma nota…",
+  "markAll": "Marcar tudo OK",
+  "clearAll": "Limpar secção",
+  "nav": "Ir para secção",
+  "summary": "Resumo",
+  "issuesTitle": "Incidências",
+  "noIssues": "Sem incidências marcadas. Se encontrares um problema, marca-o como «Problema» e aparecerá aqui.",
+  "pending": "pendentes",
+  "counts": "OK {ok} · Problema {bad} · N/A {na} · Pendentes {pend}",
+  "reset": "Reiniciar formulário",
+  "resetConfirm": "Apagar TODO o formulário (marcas, notas, matrícula, VIN e campos personalizados)? Não se pode desfazer.",
+  "resetDone": "Formulário reiniciado",
+  "pdf": "Gerar PDF",
+  "pdfHint": "Abre-se o diálogo de impressão: escolhe «Guardar como PDF».",
+  "language": "Idioma",
+  "theme": "Tema",
+  "themeAuto": "Auto",
+  "themeLight": "Claro",
+  "themeDark": "Escuro",
+  "source": "Fonte",
+  "added": "Adicionado",
+  "addedHint": "Ponto adicionado à lista original",
+  "credit": "Lista baseada na checklist de EdaL (Enrique DC) em Pedidos Tesla.",
+  "offline": "Funciona sem ligação",
+  "date": "Data",
+  "signature": "Assinatura",
+  "signatureName": "Nome e assinatura",
+  "signatureDate": "Data da assinatura",
+  "generated": "Gerado",
+  "legend": "☐ pendente · ☑ OK · ⚠ problema · – N/A",
+  "pdfIssues": "Resumo de incidências",
+  "pdfNone": "Sem incidências.",
+  "pdfNotes": "Notas",
+  "expandAll": "Expandir tudo",
+  "collapseAll": "Recolher tudo",
+  "itemsOf": "itens",
+  "about": "Sobre",
+  "noteToggle": "Adicionar nota",
+  "editing": "Alterações guardadas neste dispositivo"
+ },
+ "sec": {
+  "prep": {
+   "t": "Identificação e preparação",
+   "i": "Antes de olhar para o carro: que seja o teu, com o que pediste e com os papéis em ordem."
+  },
+  "ext": {
+   "t": "Exterior e interior",
+   "i": "Dá uma volta completa ao veículo e verifica depois todos os lugares e compartimentos."
+  },
+  "func": {
+   "t": "Comandos e conforto",
+   "i": "Testa as funções instaladas no teu veículo, com o manual como referência."
+  },
+  "tech": {
+   "t": "Tecnologia e carregamento",
+   "i": "Verifica acessos, conectividade, carregamento e os acessórios da tua encomenda."
+  },
+  "end": {
+   "t": "Fecho e incidências",
+   "i": "Deixa registo do que ficou pendente e guarda uma cópia com as tuas fotografias."
+  }
+ },
+ "grp": {
+  "g-prep": "Identificação",
+  "g-docs": "Documentação e trâmites (Portugal)",
+  "g-ext": "Exterior",
+  "g-int": "Interior",
+  "g-ctl": "Aberturas, luzes e comandos",
+  "g-seat": "Bancos e equipamento",
+  "g-scr": "Ecrãs e conectividade",
+  "g-chg": "Carregamento, acessórios e viagem",
+  "g-end": "Entrega e primeiros trajetos"
+ },
+ "prep": [
+  {
+   "t": "O que levar",
+   "x": "Telemóvel carregado, lanterna LED potente, caneta e, se quiseres, luvas de nitrilo."
+  },
+  {
+   "t": "Vai acompanhado",
+   "x": "Outra pessoa olha com a cabeça mais fria e ajuda-te com as luzes de travão e marcha-atrás."
+  },
+  {
+   "t": "Documentação",
+   "x": "Leva CC, carta de condução, seguro e os papéis da secção 1. Descarrega os documentos da tua conta Tesla."
+  },
+  {
+   "t": "Fotos de tudo",
+   "x": "Verifica com boa luz e fotografa cada achado, de perto e de onde está."
+  },
+  {
+   "t": "Sem pressa",
+   "x": "Podes inspecionar o carro antes de o aceitar formalmente. Passa a mão por superfícies e juntas e testa tudo."
+  }
+ ],
+ "after": [
+  {
+   "t": "Vibrações no volante",
+   "x": "Se notares vibrações (volante, pedais ou apoio de braço), ajusta as pressões às da etiqueta do carro e abre uma incidência na app para rever alinhamento e equilibragem."
+  },
+  {
+   "t": "Direito de desistência",
+   "x": "Em compras à distância costuma haver um prazo de desistência (14 dias na UE). Confirma as condições da Tesla Portugal no teu contrato."
+  }
+ ],
+ "it": {
+  "P01": {
+   "t": "Documentação e seguro",
+   "x": "Marcação confirmada, documentos de entrega disponíveis e seguro em vigor desde o levantamento."
+  },
+  "P02": {
+   "t": "Número de chassis (VIN)",
+   "x": "O VIN do veículo coincide com a encomenda e com a documentação."
+  },
+  "P03": {
+   "t": "Matrícula",
+   "x": "Coincide com a documentação; ambas as chapas estão bem fixas."
+  },
+  "P04": {
+   "t": "Configuração contratada",
+   "x": "Modelo, versão, cor, interior, jantes, lugares e opções coincidem com a encomenda."
+  },
+  "P05": {
+   "t": "Chaves entregues",
+   "x": "Receber todos os cartões ou comandos previstos e confirmar a quantidade com a equipa de entrega.",
+   "tip": "O habitual são 2 cartões-chave: testa os dois."
+  },
+  "P06": {
+   "t": "Quilometragem e bateria",
+   "x": "Anotar ambos os valores; ter carga suficiente para o primeiro trajeto e o seu carregamento."
+  },
+  "E01": {
+   "t": "Pintura",
+   "x": "Sem riscos, mossas, remoinhos marcados nem inclusões visíveis.",
+   "tip": "Com a lanterna em ângulo veem-se os remoinhos e os pontos de pó sob a pintura."
+  },
+  "E02": {
+   "t": "Cor e acabamento",
+   "x": "Tom uniforme; verificar também as zonas visíveis ao abrir portas e bagageiras.",
+   "tip": "Em alguns carros as zonas interiores das portas vinham sem pintar."
+  },
+  "E03": {
+   "t": "Painéis e juntas",
+   "x": "Verificar o ajuste do capô, portas, guarda-lamas e portão; olhar o capô a partir do banco."
+  },
+  "E04": {
+   "t": "Vidros e teto",
+   "x": "Sem impactos, fissuras ou riscos; verificar todo o envidraçado instalado."
+  },
+  "E05": {
+   "t": "Faróis, farolins e câmaras",
+   "x": "Lentes limpas, íntegras e bem assentes; sem água acumulada no interior."
+  },
+  "E06": {
+   "t": "Borrachas e frisos",
+   "x": "Borrachas assentes, sem vincos, cortes ou zonas soltas; verificar o perímetro do teto.",
+   "tip": "Olha sobretudo as borrachas entre o teto de vidro e a carroçaria: não devem estar torcidas."
+  },
+  "E07": {
+   "t": "Portas e puxadores",
+   "x": "Abrir e fechar todas; verificar o ajuste do vidro quando aplicável.",
+   "tip": "Ao abrir e fechar, o vidro deve descer e subir sozinho, sem roçar."
+  },
+  "E08": {
+   "t": "Jantes e tampões",
+   "x": "Sem roçaduras nem danos; pedir ajuda para ver por baixo das coberturas, se existirem."
+  },
+  "E09": {
+   "t": "Pneus",
+   "x": "Medidas homologadas para esta configuração; sem cortes, altos ou deformações."
+  },
+  "E10": {
+   "t": "Pressão dos pneus",
+   "x": "Verificar a frio segundo a etiqueta do veículo e o manual; não usar um valor universal."
+  },
+  "E11": {
+   "t": "Proteções e limpeza",
+   "x": "Sem restos de adesivo em puxadores ou aros; verificar a zona inferior visível sem se meter debaixo."
+  },
+  "I01": {
+   "t": "Bancos e estofos",
+   "x": "Verificar todas as filas: sem cortes, manchas, riscos ou costuras degradadas."
+  },
+  "I02": {
+   "t": "Consola e tablier",
+   "x": "Superfícies, painéis de porta e frisos sem marcas nem peças soltas."
+  },
+  "I03": {
+   "t": "Volante e comandos",
+   "x": "Sem riscos ou deformações; verificar o toque dos botões e rodas de controlo."
+  },
+  "I04": {
+   "t": "Ecrãs",
+   "x": "Superfície e molduras sem marcas; incluir instrumentação e ecrã traseiro, se existirem."
+  },
+  "I05": {
+   "t": "Teto e palas",
+   "x": "Revestimentos bem colocados; sem vincos anómalos, manchas ou danos."
+  },
+  "I06": {
+   "t": "Compartimentos e bagageiras",
+   "x": "Porta-luvas, consola, pisos e revestimentos limpos; tampas e fechos em bom estado."
+  },
+  "I07": {
+   "t": "Tapetes",
+   "x": "Os incluídos ou contratados estão presentes e fixos sem interferir com os pedais."
+  },
+  "F01": {
+   "t": "Luzes dianteiras",
+   "x": "Testar luzes de dia, médios, máximos e nevoeiro dianteiro, se equipado."
+  },
+  "F02": {
+   "t": "Sinalização exterior",
+   "x": "Piscas, quatro piscas, presença, travão, marcha-atrás, matrícula e nevoeiro traseiro."
+  },
+  "F03": {
+   "t": "Iluminação interior",
+   "x": "Testar teto, leitura, cortesia, porta-luvas, bagageiras e sob as portas, conforme o equipamento."
+  },
+  "F04": {
+   "t": "Vidros elétricos",
+   "x": "Acionar todos os instalados: curso normal, sem roçar nem ruídos anómalos.",
+   "tip": "Em alguns modelos os traseiros só descem cerca de 2/3: é normal."
+  },
+  "F05": {
+   "t": "Abertura por dentro",
+   "x": "Testar o comando habitual de cada porta; localizar a abertura de emergência no manual."
+  },
+  "F06": {
+   "t": "Espelhos retrovisores",
+   "x": "Ajuste e rebatimento, se existir; inclinação em marcha-atrás e recuperação se estiver ativada."
+  },
+  "F07": {
+   "t": "Bagageira dianteira",
+   "x": "Testar abertura e fecho segundo o manual; pedir uma demonstração se necessário.",
+   "tip": "Abre-se pelo ecrã, pela app ou por voz."
+  },
+  "F08": {
+   "t": "Bagageira traseira",
+   "x": "Abrir e fechar; testar o acionamento elétrico ou mãos-livres só se equipado."
+  },
+  "F09": {
+   "t": "Limpa-vidros e lavagem",
+   "x": "Testar com as portas fechadas e o vidro molhado; verificar o líquido do lava-vidros.",
+   "tip": "Importante: só funcionam com todas as portas fechadas."
+  },
+  "F10": {
+   "t": "Buzina e aviso sonoro",
+   "x": "Testar brevemente a buzina e o aviso sonoro de marcha-atrás, se equipado, num local seguro."
+  },
+  "F11": {
+   "t": "Ajuste dos bancos",
+   "x": "Testar os ajustes manuais ou elétricos de todos os lugares que os tenham."
+  },
+  "F12": {
+   "t": "Encostos e filas traseiras",
+   "x": "Testar o rebatimento e retorno previstos; verificar que ficam travados."
+  },
+  "F13": {
+   "t": "Cintos e ancoragens",
+   "x": "Apertar, soltar e verificar a retração em todos os lugares; verificar ancoragens infantis."
+  },
+  "F14": {
+   "t": "Climatização",
+   "x": "Testar frio, calor, caudal e saídas instaladas, incluindo as das filas traseiras."
+  },
+  "F15": {
+   "t": "Conforto térmico",
+   "x": "Testar aquecimento ou ventilação dos bancos e aquecimento do volante, se existirem."
+  },
+  "F16": {
+   "t": "Luz ambiente",
+   "x": "Verificar acendimento, continuidade e ajuste entre tablier e portas, se equipado."
+  },
+  "F17": {
+   "t": "Equipamento específico",
+   "x": "Testar com o pessoal portas especiais, suspensão regulável ou outras opções contratadas."
+  },
+  "T01": {
+   "t": "Ecrãs e resposta",
+   "x": "Testar brilho, toque e menus nos ecrãs instalados; procurar píxeis defeituosos."
+  },
+  "T02": {
+   "t": "Câmaras e avisos",
+   "x": "Imagem disponível nas vistas instaladas; consultar qualquer alerta ou calibração pendente."
+  },
+  "T03": {
+   "t": "Áudio e chamadas",
+   "x": "Testar os altifalantes com o balanço; emparelhar Bluetooth e verificar o microfone."
+  },
+  "T04": {
+   "t": "USB e tomadas",
+   "x": "Testar as portas e tomadas instaladas; identificar no manual quais permitem dados.",
+   "tip": "O do porta-luvas costuma ser o único com dados, o que o Sentinela usa para gravar."
+  },
+  "T05": {
+   "t": "Carregamento sem fios",
+   "x": "Testar com um telemóvel compatível cada zona de carga, se existir."
+  },
+  "T06": {
+   "t": "Conta e acesso",
+   "x": "Veículo visível na app; testar cada cartão ou comando e o telemóvel-chave compatível."
+  },
+  "T07": {
+   "t": "Navegação e opções",
+   "x": "Verificar localização, rota e serviços contratados; consultar ativações pendentes."
+  },
+  "T08": {
+   "t": "Memória e gravação",
+   "x": "Verificar a USB incluída e a gravação da câmara / Sentinela disponível conforme a configuração."
+  },
+  "C01": {
+   "t": "Porta de carregamento",
+   "x": "Tampa, abertura e fecho corretos; conector limpo e sem danos visíveis."
+  },
+  "C02": {
+   "t": "Teste de carga",
+   "x": "Se houver posto disponível, iniciar e parar um carregamento; verificar bloqueio e libertação do cabo."
+  },
+  "C03": {
+   "t": "Cabo e adaptadores",
+   "x": "Verificar o cabo tipo 2 e outros elementos incluídos ou comprados: estado e ligação sem forçar.",
+   "tip": "Se te derem um cabo de outra marca e custar a ligar, pede para o trocarem por um Mennekes (o azul habitual)."
+  },
+  "C04": {
+   "t": "Plano de carregamento",
+   "x": "Localizar a próxima paragem e o limite recomendado no veículo; verificar o pagamento na app."
+  },
+  "A01": {
+   "t": "Acessórios da encomenda",
+   "x": "Comparar a entrega com a encomenda: tapetes, tabuleiro, cabos e outros elementos acordados."
+  },
+  "A02": {
+   "t": "Kit de emergência",
+   "x": "Verificar estojo de primeiros socorros e colete, se incluídos; ter o colete acessível para a viagem."
+  },
+  "A03": {
+   "t": "Reparação de pneus",
+   "x": "Kit ou solução prevista; verificar a validade do vedante e testar o compressor sem esvaziar o vedante.",
+   "tip": "Alguns compressores não funcionavam: testa-o ali mesmo."
+  },
+  "A04": {
+   "t": "Baliza V16 ligada",
+   "x": "Só se fores circular em Espanha (obrigatória lá): levar um modelo certificado, com bateria e válido."
+  },
+  "A05": {
+   "t": "Reboque e outros extras",
+   "x": "Se contratado: engate, chaves, instalação e acessórios; pedir ao pessoal que mostre a montagem.",
+   "tip": "A ficha do engate vê-se retirando a tampa inferior do para-choques traseiro (serve uma moeda)."
+  },
+  "S01": {
+   "t": "Incidências comunicadas",
+   "x": "Mostrar cada achado à equipa de entrega; guardar fotos e registo escrito."
+  },
+  "S02": {
+   "t": "Solução ou seguimento",
+   "x": "Acordar o que se resolve hoje, o que requer marcação e que verificações ficam pendentes."
+  },
+  "S03": {
+   "t": "Preparação para circular",
+   "x": "Compreender seleção de mudança, travagem, luzes e desembaciamento; resolver alertas de segurança."
+  },
+  "S04": {
+   "t": "Primeiros trajetos",
+   "x": "Observar direção, travagem, vibrações e ruídos a velocidades legais; comunicar anomalias.",
+   "tip": "Faz uma viagem longa nos primeiros 10 dias: algumas vibrações só aparecem a velocidade de autoestrada."
+  },
+  "S05": {
+   "t": "Documentos e trâmites",
+   "x": "Guardar o comprovativo de entrega e confirmar a documentação definitiva."
+  },
+  "D01": {
+   "t": "Cartão de Cidadão e carta de condução",
+   "x": "Leva os dois originais, em validade. A Tesla pede-os como tarefa prévia na app.",
+   "tip": "Confirma que o nome coincide exatamente com o da encomenda e do contrato."
+  },
+  "D02": {
+   "t": "Seguro ativo com a matrícula",
+   "x": "Sem seguro válido não sais com o carro. Deixa a apólice pré-contratada e associa a matrícula assim que a Tesla a indicar.",
+   "tip": "A matrícula costuma chegar na véspera ou no próprio dia, por vezes 2 h antes: avisa antes a seguradora ou o agente. Mínimo legal: responsabilidade civil."
+  },
+  "D03": {
+   "t": "RRA (Requerimento de Registo Automóvel)",
+   "x": "Impresso do IRN com os quadros Q3 (adquirente) e Q9 (assinaturas) preenchidos. Se não o levares preenchido, faz-se no centro.",
+   "tip": "A Tesla costuma enviá-lo por email com a Declaração de Venda. Pergunta se podes levá-lo já preenchido e assinado."
+  },
+  "D04": {
+   "t": "Declaração de Venda e Notificação ao IMT",
+   "x": "Recebes a declaração de venda da Tesla e a notificação ao IMT; guarda-as, com elas podes circular até chegar o DUA.",
+   "tip": "Pergunta como e quando chegará o DUA definitivo."
+  },
+  "D05": {
+   "t": "Documentos do banco (se houver financiamento)",
+   "x": "Com crédito ou leasing costumam pedir, além disso, o contrato ou documento da entidade. Leva uma cópia.",
+   "tip": "Confirma com o consultor e o banco quais os documentos exatos e se o banco tem de assinar o RRA."
+  },
+  "D06": {
+   "t": "Dados do comprador nos papéis",
+   "x": "Nome, NIF e morada corretos no contrato, fatura e documentos de registo.",
+   "tip": "Um erro aqui atrasa o registo: corrige antes de assinar."
+  },
+  "D07": {
+   "t": "App Tesla e meio de pagamento prontos",
+   "x": "App instalada, conta criada e cartão registado para pagar nos Superchargers. O registo à chegada ao centro faz-se com o telemóvel (código QR)."
+  },
+  "E12": {
+   "t": "Retoques ou polimento recente",
+   "x": "Procura pequenas manchas de tinta ou zonas com brilho diferente. Pergunta se algo foi repintado ou polido antes da entrega e pede que fique por escrito."
+  },
+  "E13": {
+   "t": "Baixos e danos de transporte",
+   "x": "Olha para os baixos e para-choques sem te meteres debaixo: pancadas, roçaduras ou riscos da carga e descarga. Importante para a garantia da bateria.",
+   "tip": "Em Portugal houve entregas adiadas por para-choques riscados no transporte."
+  },
+  "E14": {
+   "t": "Etiquetas do pilar B",
+   "x": "Abre a porta do condutor e fotografa a etiqueta de certificação (com VIN) e a de pneus e carga (pressões). Compara o VIN com o do para-brisas e do ecrã."
+  },
+  "T09": {
+   "t": "Versão de software",
+   "x": "Anota a versão em Controlos > Software e verifica se não há uma atualização a meio. Provavelmente chegará uma OTA pouco depois."
+  },
+  "T10": {
+   "t": "Condutores e chave na app",
+   "x": "Adiciona todos os condutores (Segurança e condutores) e testa a chave do telemóvel e o desbloqueio pela app antes de saíres."
+  },
+  "T11": {
+   "t": "Dashcam e Sentinela",
+   "x": "Com uma USB com a pasta TeslaCam na porta com dados, ativa dashcam e Sentinela, grava um clip e reproduz."
+  },
+  "T12": {
+   "t": "Alinhamento e direção",
+   "x": "Volante centrado em reta e o carro não puxa para um lado. Se houver vibrações ou puxões, regista na app para rever o alinhamento."
+  },
+  "A06": {
+   "t": "Sem roda suplente nem kit",
+   "x": "O Model 3 não tem roda suplente e na maioria dos mercados europeus também não traz kit anti-furo. Verifica o que o teu carro inclui e planeia comprar compressor e kit."
+  },
+  "A07": {
+   "t": "Carregador portátil e cabos",
+   "x": "Confirma que cabos a tua encomenda inclui: cabo Tipo 2 e, se o compraste, carregador portátil (costuma vir num saco Tesla). Testa que ligam sem forçar."
+  },
+  "S06": {
+   "t": "Registar defeitos na app",
+   "x": "Regista cada defeito na app Tesla antes de aceitares o carro. Pergunta se há prazo (em alguns mercados, p. ex. 24 h ou 160 km) para registar defeitos depois."
+  },
+  "S07": {
+   "t": "Assinatura de aceitação",
+   "x": "Não assines a aceitação antes de terminares a vistoria. Os defeitos pendentes devem ficar escritos no documento de entrega e deves receber uma cópia."
+  },
+  "S08": {
+   "t": "Fotos e vídeo com data",
+   "x": "Grava um vídeo à volta do carro e fotografa conta-quilómetros, VIN, etiquetas e cada defeito, antes de saíres do centro."
+  },
+  "S09": {
+   "t": "Se o carro for transportado depois",
+   "x": "Se o vais enviar (p. ex. por barco), guarda as fotos do estado atual e pede ao transportador condições, documentos e nível de bateria exigidos."
+  }
+ }
+}

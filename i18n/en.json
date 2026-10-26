@@ -1,0 +1,483 @@
+{
+ "ui": {
+  "title": "Tesla Delivery Checklist",
+  "subtitle": "Car inspection on delivery day",
+  "privacy": "This app does not transmit any data: everything stays on this device only. No analytics and no network calls, other than loading the app itself.",
+  "vehicle": "Vehicle",
+  "plate": "Licence plate",
+  "vin": "VIN",
+  "custom": "Custom fields",
+  "addField": "Add field",
+  "fieldName": "Field name",
+  "fieldValue": "Value",
+  "removeField": "Delete field",
+  "customEmpty": "No custom fields. Add, for example, centre, advisor or mileage.",
+  "before": "Before you go",
+  "after": "After delivery",
+  "progress": "Progress",
+  "done": "done",
+  "of": "of",
+  "ok": "OK",
+  "bad": "Issue",
+  "na": "N/A",
+  "note": "Note",
+  "notePh": "Describe the issue or add a note…",
+  "markAll": "Mark all OK",
+  "clearAll": "Clear section",
+  "nav": "Jump to section",
+  "summary": "Summary",
+  "issuesTitle": "Issues",
+  "noIssues": "No issues marked. If you find a problem, mark it as “Issue” and it will appear here.",
+  "pending": "pending",
+  "counts": "OK {ok} · Issue {bad} · N/A {na} · Pending {pend}",
+  "reset": "Reset form",
+  "resetConfirm": "Delete the ENTIRE form (marks, notes, plate, VIN and custom fields)? This cannot be undone.",
+  "resetDone": "Form reset",
+  "pdf": "Generate PDF",
+  "pdfHint": "The print dialog will open: choose “Save as PDF”.",
+  "language": "Language",
+  "theme": "Theme",
+  "themeAuto": "Auto",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "source": "Source",
+  "added": "Added",
+  "addedHint": "Item added to the original list",
+  "credit": "List based on the checklist by EdaL (Enrique DC) at Pedidos Tesla.",
+  "offline": "Works offline",
+  "date": "Date",
+  "signature": "Signature",
+  "signatureName": "Name and signature",
+  "signatureDate": "Date signed",
+  "generated": "Generated",
+  "legend": "☐ pending · ☑ OK · ⚠ issue · – N/A",
+  "pdfIssues": "Issue summary",
+  "pdfNone": "No issues.",
+  "pdfNotes": "Notes",
+  "expandAll": "Expand all",
+  "collapseAll": "Collapse all",
+  "itemsOf": "items",
+  "about": "About",
+  "noteToggle": "Add note",
+  "editing": "Changes saved on this device"
+ },
+ "sec": {
+  "prep": {
+   "t": "Identification and preparation",
+   "i": "Before looking at the car: it is yours, as ordered, with the paperwork in order."
+  },
+  "ext": {
+   "t": "Exterior and interior",
+   "i": "Walk fully around the vehicle, then check every seat and compartment."
+  },
+  "func": {
+   "t": "Controls and comfort",
+   "i": "Test the functions installed in your vehicle, using the manual as reference."
+  },
+  "tech": {
+   "t": "Technology and charging",
+   "i": "Check access, connectivity, charging and the accessories of your order."
+  },
+  "end": {
+   "t": "Wrap-up and issues",
+   "i": "Record what is pending and keep a copy together with your photos."
+  }
+ },
+ "grp": {
+  "g-prep": "Identification",
+  "g-docs": "Paperwork and formalities (Portugal)",
+  "g-ext": "Exterior",
+  "g-int": "Interior",
+  "g-ctl": "Openings, lights and controls",
+  "g-seat": "Seats and equipment",
+  "g-scr": "Screens and connectivity",
+  "g-chg": "Charging, accessories and travel",
+  "g-end": "Handover and first drives"
+ },
+ "prep": [
+  {
+   "t": "What to bring",
+   "x": "Charged phone, powerful LED torch, pen and, if you like, nitrile gloves."
+  },
+  {
+   "t": "Bring someone",
+   "x": "A second person looks with a cooler head and helps with brake and reverse lights."
+  },
+  {
+   "t": "Paperwork",
+   "x": "Bring ID card, driving licence, insurance and the papers from section 1. Download the documents from your Tesla account."
+  },
+  {
+   "t": "Photograph everything",
+   "x": "Inspect in good light and photograph each finding, close up and showing where it is."
+  },
+  {
+   "t": "Take your time",
+   "x": "You can inspect the car before formally accepting it. Run your hand over surfaces and gaps and test everything."
+  }
+ ],
+ "after": [
+  {
+   "t": "Steering wheel vibrations",
+   "x": "If you notice vibrations (wheel, pedals or armrest), set pressures to the car label values and open a ticket in the app to check alignment and balancing."
+  },
+  {
+   "t": "Right of withdrawal",
+   "x": "Distance purchases usually carry a withdrawal period (14 days in the EU). Check Tesla Portugal's conditions in your contract."
+  }
+ ],
+ "it": {
+  "P01": {
+   "t": "Documents and insurance",
+   "x": "Appointment confirmed, delivery documents ready and insurance active from pick-up."
+  },
+  "P02": {
+   "t": "VIN",
+   "x": "The vehicle's VIN matches the order and the paperwork."
+  },
+  "P03": {
+   "t": "Licence plate",
+   "x": "Matches the paperwork; both plates are firmly fixed."
+  },
+  "P04": {
+   "t": "Ordered configuration",
+   "x": "Model, trim, colour, interior, wheels, seats and options match the order."
+  },
+  "P05": {
+   "t": "Keys handed over",
+   "x": "Receive all planned key cards or fobs and confirm the number with the delivery team.",
+   "tip": "Usually 2 key cards: test both."
+  },
+  "P06": {
+   "t": "Mileage and battery",
+   "x": "Note both values; have enough charge for the first trip and for recharging."
+  },
+  "E01": {
+   "t": "Paint",
+   "x": "No scratches, dents, pronounced swirls or visible inclusions.",
+   "tip": "With a torch at an angle you can spot swirls and dust specks under the paint."
+  },
+  "E02": {
+   "t": "Colour and finish",
+   "x": "Even tone; also check areas visible when opening doors and trunks.",
+   "tip": "Some cars had unpainted door interiors."
+  },
+  "E03": {
+   "t": "Panels and gaps",
+   "x": "Check fit of hood, doors, fenders and tailgate; look along the hood from the seat."
+  },
+  "E04": {
+   "t": "Glass and roof",
+   "x": "No chips, cracks or scratches; check all installed glazing."
+  },
+  "E05": {
+   "t": "Headlights, tail lights and cameras",
+   "x": "Lenses clean, intact and seated; no water inside."
+  },
+  "E06": {
+   "t": "Seals and trim",
+   "x": "Seals seated, no folds, cuts or loose areas; check the roof perimeter.",
+   "tip": "Look mainly at the seals between the glass roof and the body: they must not be twisted."
+  },
+  "E07": {
+   "t": "Doors and handles",
+   "x": "Open and close all of them; check window fit where applicable.",
+   "tip": "When opening and closing, the window should drop and rise on its own without rubbing."
+  },
+  "E08": {
+   "t": "Wheels and covers",
+   "x": "No scuffs or damage; ask for help to check under the covers, if fitted."
+  },
+  "E09": {
+   "t": "Tyres",
+   "x": "Sizes approved for this configuration; no cuts, bulges or deformations."
+  },
+  "E10": {
+   "t": "Tyre pressure",
+   "x": "Check cold against the vehicle label and manual; do not use a universal figure."
+  },
+  "E11": {
+   "t": "Protections and cleanliness",
+   "x": "No adhesive residue on handles or frames; check visible underside without crawling under."
+  },
+  "I01": {
+   "t": "Seats and upholstery",
+   "x": "Check all rows: no cuts, stains, scratches or worn stitching."
+  },
+  "I02": {
+   "t": "Console and dashboard",
+   "x": "Surfaces, door panels and trim free of marks or loose parts."
+  },
+  "I03": {
+   "t": "Steering wheel and controls",
+   "x": "No scratches or deformation; check the feel of buttons and scroll wheels."
+  },
+  "I04": {
+   "t": "Screens",
+   "x": "Surface and bezels unmarked; include instrument and rear screen, if any."
+  },
+  "I05": {
+   "t": "Headliner and sun visors",
+   "x": "Linings correctly fitted; no abnormal folds, stains or damage."
+  },
+  "I06": {
+   "t": "Compartments and trunks",
+   "x": "Glovebox, console, floors and linings clean; lids and latches in good condition."
+  },
+  "I07": {
+   "t": "Floor mats",
+   "x": "Included or ordered mats are present and secured without touching the pedals."
+  },
+  "F01": {
+   "t": "Front lights",
+   "x": "Test daytime running, low beam, high beam and front fog, if fitted."
+  },
+  "F02": {
+   "t": "Exterior signalling",
+   "x": "Indicators, hazards, position, brake, reverse, plate and rear fog lights."
+  },
+  "F03": {
+   "t": "Interior lighting",
+   "x": "Test ceiling, reading, courtesy, glovebox, trunks and door puddle lights, as equipped."
+  },
+  "F04": {
+   "t": "Power windows",
+   "x": "Operate all fitted: normal travel, no rubbing or abnormal noises.",
+   "tip": "On some models the rear ones only drop about 2/3: that is normal."
+  },
+  "F05": {
+   "t": "Opening from inside",
+   "x": "Test the usual release of each door; locate the emergency release in the manual."
+  },
+  "F06": {
+   "t": "Mirrors",
+   "x": "Adjustment and folding if fitted; reverse tilt and return if enabled."
+  },
+  "F07": {
+   "t": "Front trunk (frunk)",
+   "x": "Test opening and closing per the manual; ask for a demonstration if needed.",
+   "tip": "It opens from the screen, the app or by voice."
+  },
+  "F08": {
+   "t": "Rear trunk",
+   "x": "Open and close; test powered or hands-free operation only if fitted."
+  },
+  "F09": {
+   "t": "Wipers and washers",
+   "x": "Test with doors closed and glass wet; check washer fluid.",
+   "tip": "Important: they only work with all doors closed."
+  },
+  "F10": {
+   "t": "Horn and audible warning",
+   "x": "Briefly test the horn and the reverse warning sound, if fitted, in a safe place."
+  },
+  "F11": {
+   "t": "Seat adjustment",
+   "x": "Test manual or electric adjustments on every seat that has them."
+  },
+  "F12": {
+   "t": "Seat backs and rear rows",
+   "x": "Test planned folding and return; check they latch."
+  },
+  "F13": {
+   "t": "Seat belts and anchors",
+   "x": "Buckle, unbuckle and check retraction on every seat; check child anchors."
+  },
+  "F14": {
+   "t": "Climate control",
+   "x": "Test cooling, heating, fan and installed vents, including rear rows."
+  },
+  "F15": {
+   "t": "Thermal comfort",
+   "x": "Test seat heating or ventilation and steering wheel heating, if present."
+  },
+  "F16": {
+   "t": "Ambient light",
+   "x": "Check it turns on, is continuous and adjustable between dashboard and doors, if fitted."
+  },
+  "F17": {
+   "t": "Specific equipment",
+   "x": "Test special doors, adjustable suspension or other ordered options with staff."
+  },
+  "T01": {
+   "t": "Screens and response",
+   "x": "Test brightness, touch and menus on installed screens; look for dead pixels."
+  },
+  "T02": {
+   "t": "Cameras and warnings",
+   "x": "Image available in all installed views; check any pending alert or calibration."
+  },
+  "T03": {
+   "t": "Audio and calls",
+   "x": "Test the speakers with balance; pair Bluetooth and check the microphone."
+  },
+  "T04": {
+   "t": "USB and sockets",
+   "x": "Test installed ports and sockets; identify in the manual which carry data.",
+   "tip": "The glovebox one is usually the only one with data, the one Sentry uses to record."
+  },
+  "T05": {
+   "t": "Wireless charging",
+   "x": "Test each charging pad with a compatible phone, if fitted."
+  },
+  "T06": {
+   "t": "Account and access",
+   "x": "Vehicle visible in the app; test each key card or fob and the compatible phone key."
+  },
+  "T07": {
+   "t": "Navigation and options",
+   "x": "Check location, route and purchased services; look for pending activations."
+  },
+  "T08": {
+   "t": "Storage and recording",
+   "x": "Check the included USB drive and camera / Sentry recording available for your configuration."
+  },
+  "C01": {
+   "t": "Charge port",
+   "x": "Flap opens and closes properly; connector clean with no visible damage."
+  },
+  "C02": {
+   "t": "Charging test",
+   "x": "If a charger is available, start and stop a charge; check cable lock and release."
+  },
+  "C03": {
+   "t": "Cable and adapters",
+   "x": "Check the Type 2 cable and other included or purchased items: condition and connection without forcing.",
+   "tip": "If they give you a different-brand cable that is hard to plug in, ask for a Mennekes one (the usual blue)."
+  },
+  "C04": {
+   "t": "Charging plan",
+   "x": "Locate the next stop and the recommended limit in the vehicle; check payment in the app."
+  },
+  "A01": {
+   "t": "Order accessories",
+   "x": "Compare delivery with the order: mats, tray, cables and other agreed items."
+  },
+  "A02": {
+   "t": "Emergency kit",
+   "x": "Check first-aid kit and vest if included; keep the vest within reach for the trip."
+  },
+  "A03": {
+   "t": "Tyre repair",
+   "x": "Kit or planned solution; check sealant expiry and test the compressor without emptying the sealant.",
+   "tip": "Some compressors did not work: test it on the spot."
+  },
+  "A04": {
+   "t": "V16 beacon connected",
+   "x": "Only if you will drive in Spain (mandatory there): carry a certified model, charged and valid."
+  },
+  "A05": {
+   "t": "Tow bar and other extras",
+   "x": "If ordered: hitch, keys, installation and accessories; ask staff to show how it fits.",
+   "tip": "The hitch socket is visible by removing the lower rear bumper cover (a coin works)."
+  },
+  "S01": {
+   "t": "Issues reported",
+   "x": "Show every finding to the delivery team; keep photos and written confirmation."
+  },
+  "S02": {
+   "t": "Fix or follow-up",
+   "x": "Agree what is fixed today, what needs an appointment and which checks remain."
+  },
+  "S03": {
+   "t": "Ready to drive",
+   "x": "Understand gear selection, braking, lights and defogging; resolve safety alerts."
+  },
+  "S04": {
+   "t": "First drives",
+   "x": "Observe steering, braking, vibrations and noises at legal speeds; report anomalies.",
+   "tip": "Do a long trip in the first 10 days: some vibrations only appear at motorway speed."
+  },
+  "S05": {
+   "t": "Documents and paperwork",
+   "x": "Keep the delivery record and confirm the final documentation."
+  },
+  "D01": {
+   "t": "ID card and driving licence",
+   "x": "Bring both originals, valid. Tesla asks for them as a pre-delivery task in the app.",
+   "tip": "Check the name matches the order and contract exactly."
+  },
+  "D02": {
+   "t": "Insurance active with the plate",
+   "x": "You cannot drive away without valid insurance. Pre-arrange the policy and add the plate as soon as Tesla gives it to you.",
+   "tip": "The plate usually arrives the day before or the same day, sometimes 2 h earlier: warn your insurer or agent beforehand. Legal minimum: third-party liability."
+  },
+  "D03": {
+   "t": "RRA (vehicle registration request)",
+   "x": "IRN form with boxes Q3 (buyer) and Q9 (signatures) filled in. If you do not bring it filled in, it is done at the centre.",
+   "tip": "Tesla usually emails it together with the Declaração de Venda. Ask whether you can bring it already filled in and signed."
+  },
+  "D04": {
+   "t": "Declaração de Venda and IMT notification",
+   "x": "You receive Tesla's sales declaration and the IMT notification; keep them, they let you drive until the DUA arrives.",
+   "tip": "Ask how and when the final DUA will arrive."
+  },
+  "D05": {
+   "t": "Bank documents (if financed)",
+   "x": "With a loan or lease they usually also ask for the lender's contract or paperwork. Bring a copy.",
+   "tip": "Confirm with the advisor and the bank exactly which documents are needed and whether the bank must sign the RRA."
+  },
+  "D06": {
+   "t": "Buyer details on the paperwork",
+   "x": "Name, tax ID and address correct on the contract, invoice and registration documents.",
+   "tip": "A mistake here delays registration: fix it before signing."
+  },
+  "D07": {
+   "t": "Tesla app and payment ready",
+   "x": "App installed, account created and a card registered to pay at Superchargers. Check-in at the centre is done with your phone (QR code)."
+  },
+  "E12": {
+   "t": "Recent touch-up or polishing",
+   "x": "Look for small paint blobs or patches with a different shine. Ask whether anything was repainted or polished before delivery and get it in writing."
+  },
+  "E13": {
+   "t": "Underside and transport damage",
+   "x": "Look at the underside and bumpers without crawling under: knocks, scrapes or scratches from loading and unloading. Matters for the battery warranty.",
+   "tip": "In Portugal some deliveries were postponed over bumpers scratched in transport."
+  },
+  "E14": {
+   "t": "B-pillar labels",
+   "x": "Open the driver door and photograph the certification label (with VIN) and the tyre and loading label (pressures). Compare the VIN with the windshield and the screen."
+  },
+  "T09": {
+   "t": "Software version",
+   "x": "Note the version under Controls > Software and check no update is pending half-way. An OTA will likely arrive soon after."
+  },
+  "T10": {
+   "t": "Drivers and key in the app",
+   "x": "Add every driver (Security & Drivers) and test the phone key and unlocking from the app before you leave."
+  },
+  "T11": {
+   "t": "Dashcam and Sentry",
+   "x": "With a USB drive holding a TeslaCam folder in the data port, enable dashcam and Sentry, record a clip and play it back."
+  },
+  "T12": {
+   "t": "Alignment and steering",
+   "x": "Wheel centred on a straight road and the car does not pull to one side. If there are vibrations or pulling, log it in the app to check alignment."
+  },
+  "A06": {
+   "t": "No spare wheel or kit",
+   "x": "The Model 3 has no spare wheel and in most European markets no tyre repair kit either. Check what your car includes and plan to buy an inflator and kit."
+  },
+  "A07": {
+   "t": "Mobile connector and cables",
+   "x": "Confirm which cables your order includes: Type 2 cable and, if you bought it, the mobile connector (usually in a Tesla bag). Test they plug in without forcing."
+  },
+  "S06": {
+   "t": "Log defects in the app",
+   "x": "Log every defect in the Tesla app before accepting the car. Ask whether there is a deadline (in some markets e.g. 24 h or 160 km) to log defects afterwards."
+  },
+  "S07": {
+   "t": "Acceptance signature",
+   "x": "Do not sign acceptance until you finish the inspection. Pending defects must be written on the delivery document and you get a copy."
+  },
+  "S08": {
+   "t": "Dated photos and video",
+   "x": "Record a walk-around video and photograph odometer, VIN, labels and every defect before leaving the centre."
+  },
+  "S09": {
+   "t": "If the car is shipped afterwards",
+   "x": "If you will ship it (e.g. by sea), keep photos of its current condition and ask the carrier for conditions, documents and battery level required."
+  }
+ }
+}
