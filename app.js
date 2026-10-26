@@ -7,12 +7,14 @@ const blank=()=>({plate:'',vin:'',custom:[],marks:{},notes:{},open:{prep:true},n
 let S,L,T,CL,lang;
 
 const load=()=>{try{return {...blank(),...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch{return blank()}};
-let saveT,dirty=false,persisted=false,status='saved';
+let saveT,dirty=false,persisted=false,status='saved',quietSave=false;
 const flush=()=>{clearTimeout(saveT);if(!dirty)return;
-  try{localStorage.setItem(KEY,JSON.stringify(S));dirty=false;setStatus('saved');askPersist()}catch{setStatus('error')}};
-const save=()=>{dirty=true;if(status!=='error')setStatus('saving');clearTimeout(saveT);saveT=setTimeout(flush,200)};
+  try{localStorage.setItem(KEY,JSON.stringify(S));dirty=false;setStatus('saved',quietSave);quietSave=false;askPersist()}catch{setStatus('error')}};
+const save=(q)=>{quietSave=q===true&&!dirty?true:(q===true?quietSave:false);dirty=true;if(status!=='error')setStatus('saving',quietSave);clearTimeout(saveT);saveT=setTimeout(flush,200)};
 function askPersist(){if(persisted)return;persisted=true;try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist().catch(()=>{})}catch{}}
-function setStatus(s){status=s;const e=document.getElementById('savestate'),b=document.getElementById('saveerr');if(!e||!T)return;
+let hideT;
+function setStatus(s,quiet){status=s;const e=document.getElementById('savestate'),b=document.getElementById('saveerr');if(!e||!T)return;
+  if(!quiet){clearTimeout(hideT);e.classList.remove('off');if(s==='saved')hideT=setTimeout(()=>e.classList.add('off'),5000)}
   e.dataset.s=s;e.textContent=s==='saving'?t('saving'):s==='error'?'⚠ '+t('saveShort'):'✓ '+t('saved');
   b.hidden=s!=='error';b.textContent=s==='error'?t('saveFail'):''}
 const probe=()=>{try{localStorage.setItem('tc:probe','1');localStorage.removeItem('tc:probe');return true}catch{return false}};
@@ -101,7 +103,7 @@ function render(){
 <section class="card prog" aria-labelledby="h-prog"><div class="ph"><h2 id="h-prog">${esc(t('progress'))}</h2><b class="ppct" data-g="pct">${Math.round(done/tot.length*100)}%</b><span class="muted">${esc(t('completed'))} · <span data-g="done">${done}</span> ${esc(t('of'))} ${tot.length}</span></div>
 <div class="sbar" id="gbar" role="progressbar" aria-labelledby="h-prog" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(done/tot.length*100)}" aria-valuetext="${esc(progText(c,tot.length))}">${segsHTML(c,tot.length,true)}</div>
 <ul class="legend" data-g="legend">${legendHTML(c,tot.length)}</ul></section>
-<nav class="chips" aria-label="${esc(t('nav'))}">${CL.sections.map((s,i)=>`<a href="#sec-${s.id}" data-nav="${s.id}">${i+1} ${esc(T.sec[s.id].t)} <b data-chip="${s.id}">${chip(s)}</b></a>`).join('')}<a href="#summary">📋 ${esc(t('summary'))}</a></nav>
+<nav class="chips" aria-label="${esc(t('nav'))}"><div class="mini"><b data-g="pct2">${Math.round(done/tot.length*100)}%</b><div class="sbar" id="gbar2" aria-hidden="true">${segsHTML(c,tot.length,true)}</div></div><div class="row">${CL.sections.map((s,i)=>`<a href="#sec-${s.id}" data-nav="${s.id}">${i+1} ${esc(T.sec[s.id].t)} <b data-chip="${s.id}">${chip(s)}</b></a>`).join('')}<a href="#summary">📋 ${esc(t('summary'))}</a></div></nav>
 <aside class="privacy" role="note"><p><span aria-hidden="true">🔒</span> ${esc(t('privacy'))}</p><p><span aria-hidden="true">ℹ️</span> ${esc(t('disclaimer'))}</p></aside>
 <section class="card" aria-labelledby="h-veh"><h2 id="h-veh">${esc(t('vehicle'))}</h2>
 <div class="grid"><label class="f">${esc(t('plate'))}<input type="text" id="plate" value="${esc(S.plate)}" autocomplete="off" autocapitalize="characters" spellcheck="false"></label>
@@ -116,7 +118,7 @@ ${tipsHTML('after','🔧 '+t('after'),T.after)}
 <div class="actions"><button type="button" class="btn primary" data-act="pdf">🖨 ${esc(t('pdf'))}</button><button type="button" class="btn danger" data-act="reset">↺ ${esc(t('reset'))}</button></div>
 <p class="muted" style="text-align:center">${esc(t('pdfHint'))}</p>
 <footer><p>🔒 ${esc(t('privacy'))}</p><p>ℹ️ ${esc(t('disclaimer'))}</p><p>${esc(t('credit'))} <a href="https://pedidostesla.pages.dev/checklist" target="_blank" rel="noopener noreferrer">pedidostesla.pages.dev/checklist ↗</a></p><p>✔ ${esc(t('offline'))} · ${esc(t('editing'))}</p></footer>`;
-  setStatus(status);syncPills();
+  setStatus(status,true);syncPills();
   scrollTo(0,y);if(fo){const e=document.getElementById(fo);e&&e.focus&&e.focus()}
 }
 const chip=s=>{const l=items(s);return `${l.length-count(l).pend}/${l.length}`};
@@ -130,7 +132,9 @@ function refresh(){ // actualiza barras/contadores sin re-render completo
   const tot=allItems(),n=tot.length,c=count(tot),done=n-c.pend,pct=Math.round(done/n*100);
   $('[data-g=pct]').textContent=pct+'%';$('[data-g=done]').textContent=done;
   const gb=$('#gbar');gb.setAttribute('aria-valuenow',pct);gb.setAttribute('aria-valuetext',progText(c,n));
-  SEG.forEach(k=>{const e=gb.querySelector(`[data-seg=${k}]`),w=pc(c[k],n);e.style.width=w+'%';e.textContent=w>=9?Math.round(w)+'%':'';e.title=`${segLabel(k)}: ${c[k]} (${Math.round(w)}%)`});
+  $('[data-g=pct2]').textContent=pct+'%';
+  SEG.forEach(k=>{[gb,$('#gbar2')].forEach(g=>{const e=g.querySelector(`[data-seg=${k}]`),w=pc(c[k],n);e.style.width=w+'%';e.textContent=w>=9?Math.round(w)+'%':'';e.title=`${segLabel(k)}: ${c[k]} (${Math.round(w)}%)`})});
+  false&&SEG.forEach(k=>{const e=gb.querySelector(`[data-seg=${k}]`),w=pc(c[k],n);e.style.width=w+'%';e.textContent=w>=9?Math.round(w)+'%':'';e.title=`${segLabel(k)}: ${c[k]} (${Math.round(w)}%)`});
   $('[data-g=legend]').innerHTML=legendHTML(c,n);
   $('[data-g=stats2]').innerHTML=statsHTML(c);$('[data-g=issues]').innerHTML=issuesHTML();
   CL.sections.forEach(s=>{const l=items(s),cc=count(l),d=l.length-cc.pend;
@@ -151,7 +155,7 @@ document.addEventListener('click',e=>{
   const tp=e.target.closest('[data-theme-set]');if(tp){theme(tp.dataset.themeSet);return}
   const b=e.target.closest('[data-act]');
   if(!b){const g=e.target.closest('[data-goto]');if(g){e.preventDefault();$('#it-'+g.dataset.goto).scrollIntoView({block:'center'})}
-    const n=e.target.closest('[data-nav]');if(n){const d=$('#sec-'+n.dataset.nav);d.open=true;S.open[n.dataset.nav]=true;save()}return}
+    const n=e.target.closest('[data-nav]');if(n){const d=$('#sec-'+n.dataset.nav);d.open=true;S.open[n.dataset.nav]=true;save(true)}return}
   const a=b.dataset.act,id=b.dataset.id;
   if(a==='mark')setMark(id,b.dataset.v);
   else if(a==='note'){const nb=$('.notebox',b.closest('.item'));nb.hidden=!nb.hidden;b.setAttribute('aria-expanded',!nb.hidden);if(!nb.hidden)$('textarea',nb).focus()}
@@ -171,7 +175,7 @@ const onField=e=>{
 };
 document.addEventListener('input',onField);
 document.addEventListener('change',onField);
-document.addEventListener('toggle',e=>{const d=e.target;if(d.dataset&&d.dataset.sec){S.open[d.dataset.sec]=d.open;save()}},true);
+document.addEventListener('toggle',e=>{const d=e.target;if(d.dataset&&d.dataset.sec){S.open[d.dataset.sec]=d.open;save(true)}},true);
 
 // ---- vista de impresión (PDF vía window.print) ----
 function buildPrint(){
