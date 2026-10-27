@@ -73,7 +73,7 @@ function itemHTML(it,n){
   const m=S.marks[it.id],c=T.it[it.id],note=S.notes[it.id]||'',open=S.noteOpen[it.id]||m==='bad'||note;
   const btn=(k,l)=>`<button type="button" class="k-${k}" data-act="mark" data-id="${it.id}" data-v="${k}" aria-pressed="${m===k}">${esc(t(l))}</button>`;
   return `<article class="item ${m?'s-'+m:''}" id="it-${it.id}">
-<p class="ititle"><span class="code">${it.id}</span>${esc(c.t)}${it.added?`<span class="tag" title="${esc(t('addedHint'))}">${esc(t('added'))}</span><span class="src"><a href="${esc(it.src)}" target="_blank" rel="noopener noreferrer">${esc(t('source'))} ↗</a></span>`:''}</p>
+<p class="ititle"><span class="code">${it.id}</span>${esc(c.t)}${it.added?`<span class="tag" title="${esc(t('addedHint'))}">${esc(t('added'))}</span>${it.src?`<span class="src"><a href="${esc(it.src)}" target="_blank" rel="noopener noreferrer">${esc(t('source'))} ↗</a></span>`:''}`:''}</p>
 <p class="itext">${esc(c.x)}</p>${c.tip?`<p class="tip">💡 ${esc(c.tip)}</p>`:''}
 <div class="seg" role="group" aria-label="${esc(c.t)}">${btn('ok','ok')}${btn('bad','bad')}${btn('na','na')}
 <button type="button" class="nb ${note?'has':''}" data-act="note" data-id="${it.id}" aria-expanded="${!!open}" aria-label="${esc(t('noteToggle'))}">📝</button></div>

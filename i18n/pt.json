@@ -99,7 +99,8 @@
   "g-seat": "Bancos e equipamento",
   "g-scr": "Ecrãs e conectividade",
   "g-chg": "Carregamento, acessórios e viagem",
-  "g-end": "Entrega e primeiros trajetos"
+  "g-end": "Entrega e primeiros trajetos",
+  "g-ship": "Envio de barco para outra ilha (se aplicável)"
  },
  "prep": [
   {
@@ -140,7 +141,7 @@
   },
   "P02": {
    "t": "Número de chassis (VIN)",
-   "x": "O VIN do veículo coincide com a encomenda e com a documentação."
+   "x": "O VIN do veículo coincide com a encomenda e com a documentação. Confirma que é o mesmo na app, na documentação, no carro e no sistema, e que as opções extra estão corretas."
   },
   "P03": {
    "t": "Matrícula",
@@ -157,11 +158,11 @@
   },
   "P06": {
    "t": "Quilometragem e bateria",
-   "x": "Anotar ambos os valores; ter carga suficiente para o primeiro trajeto e o seu carregamento."
+   "x": "Anotar ambos os valores; ter carga suficiente para o primeiro trajeto e o seu carregamento. Para sair costuma bastar cerca de 50 %: confirma autonomia suficiente até ao destino com margem."
   },
   "E01": {
    "t": "Pintura",
-   "x": "Sem riscos, mossas, remoinhos marcados nem inclusões visíveis.",
+   "x": "Sem riscos, mossas, remoinhos marcados nem inclusões visíveis. Verifica também tinta escorrida (gotas), casca de laranja excessiva, pontos sem tinta ou metal exposto (incluindo salpicos de pedra) e mossas. Para micro-riscos usa luz rasante.",
    "tip": "Com a lanterna em ângulo veem-se os remoinhos e os pontos de pó sob a pintura."
   },
   "E02": {
@@ -171,7 +172,7 @@
   },
   "E03": {
    "t": "Painéis e juntas",
-   "x": "Verificar o ajuste do capô, portas, guarda-lamas e portão; olhar o capô a partir do banco."
+   "x": "Verificar o ajuste do capô, portas, guarda-lamas e portão; olhar o capô a partir do banco. Passa a mão por portas, capô e bagageira: sem degraus perceptíveis. Folgas consistentes, linhas da carroçaria contínuas e comparação esquerda/direita (ou com outros carros em entrega)."
   },
   "E04": {
    "t": "Vidros e teto",
@@ -179,16 +180,16 @@
   },
   "E05": {
    "t": "Faróis, farolins e câmaras",
-   "x": "Lentes limpas, íntegras e bem assentes; sem água acumulada no interior."
+   "x": "Lentes limpas, íntegras e bem assentes; sem água acumulada no interior. Faróis com folga e altura iguais; DRL nivelado e simétrico; liga os médios para confirmar iluminação uniforme."
   },
   "E06": {
    "t": "Borrachas e frisos",
-   "x": "Borrachas assentes, sem vincos, cortes ou zonas soltas; verificar o perímetro do teto.",
+   "x": "Borrachas assentes, sem vincos, cortes ou zonas soltas; verificar o perímetro do teto. Frisos e saias sem riscos e com encaixes sem folgas anormais; compara com o lado oposto.",
    "tip": "Olha sobretudo as borrachas entre o teto de vidro e a carroçaria: não devem estar torcidas."
   },
   "E07": {
    "t": "Portas e puxadores",
-   "x": "Abrir e fechar todas; verificar o ajuste do vidro quando aplicável.",
+   "x": "Abrir e fechar todas; verificar o ajuste do vidro quando aplicável. Abertura e fecho suaves, sem esforço nem ruídos; pegas alinhadas de forma uniforme.",
    "tip": "Ao abrir e fechar, o vidro deve descer e subir sozinho, sem roçar."
   },
   "E08": {
@@ -201,7 +202,7 @@
   },
   "E10": {
    "t": "Pressão dos pneus",
-   "x": "Verificar a frio segundo a etiqueta do veículo e o manual; não usar um valor universal."
+   "x": "Verificar a frio segundo a etiqueta do veículo e o manual; não usar um valor universal. Pressões coerentes nos 4 pneus."
   },
   "E11": {
    "t": "Proteções e limpeza",
@@ -213,7 +214,7 @@
   },
   "I02": {
    "t": "Consola e tablier",
-   "x": "Superfícies, painéis de porta e frisos sem marcas nem peças soltas."
+   "x": "Superfícies, painéis de porta e frisos sem marcas nem peças soltas. Consola central sem ruídos: levanta e baixa o apoio de braço e encosta ligeiramente a perna à consola para ouvir estalos ou peças soltas."
   },
   "I03": {
    "t": "Volante e comandos",
@@ -225,7 +226,7 @@
   },
   "I05": {
    "t": "Teto e palas",
-   "x": "Revestimentos bem colocados; sem vincos anómalos, manchas ou danos."
+   "x": "Revestimentos bem colocados; sem vincos anómalos, manchas ou danos. Tecido dos pilares A/B/C (cinzento) sem manchas."
   },
   "I06": {
    "t": "Compartimentos e bagageiras",
@@ -245,7 +246,7 @@
   },
   "F03": {
    "t": "Iluminação interior",
-   "x": "Testar teto, leitura, cortesia, porta-luvas, bagageiras e sob as portas, conforme o equipamento."
+   "x": "Testar teto, leitura, cortesia, porta-luvas, bagageiras e sob as portas, conforme o equipamento. LEDs interiores alinhados."
   },
   "F04": {
    "t": "Vidros elétricos",
@@ -312,7 +313,7 @@
   },
   "T02": {
    "t": "Câmaras e avisos",
-   "x": "Imagem disponível nas vistas instaladas; consultar qualquer alerta ou calibração pendente."
+   "x": "Imagem disponível nas vistas instaladas; consultar qualquer alerta ou calibração pendente. Imagem sem distorção nem obstruções visíveis."
   },
   "T03": {
    "t": "Áudio e chamadas",
@@ -354,7 +355,7 @@
   },
   "C04": {
    "t": "Plano de carregamento",
-   "x": "Localizar a próxima paragem e o limite recomendado no veículo; verificar o pagamento na app."
+   "x": "Localizar a próxima paragem e o limite recomendado no veículo; verificar o pagamento na app. Confirma se a Tesla oferece carregamento ou Supercharger grátis."
   },
   "A01": {
    "t": "Acessórios da encomenda",
@@ -439,7 +440,7 @@
   },
   "E13": {
    "t": "Baixos e danos de transporte",
-   "x": "Olha para os baixos e para-choques sem te meteres debaixo: pancadas, roçaduras ou riscos da carga e descarga. Importante para a garantia da bateria.",
+   "x": "Olha para os baixos e para-choques sem te meteres debaixo: pancadas, roçaduras ou riscos da carga e descarga. Importante para a garantia da bateria. Verifica também a cobertura da bateria por baixo do carro: sem riscos nem danos.",
    "tip": "Em Portugal houve entregas adiadas por para-choques riscados no transporte."
   },
   "E14": {
@@ -485,6 +486,32 @@
   "S09": {
    "t": "Se o carro for transportado depois",
    "x": "Se o vais enviar (p. ex. por barco), guarda as fotos do estado atual e pede ao transportador condições, documentos e nível de bateria exigidos."
+  },
+  "E15": {
+   "t": "Capô, frunk e dobradiças",
+   "x": "Abre o frunk e verifica por baixo e nas laterais do capô, e o interior da tampa. Verifica também as dobradiças da mala e a zona dos amortecedores da porta da bagageira."
+  },
+  "D08": {
+   "t": "Reconhecimento de assinatura do RRA",
+   "x": "Se pedirem a assinatura do RRA reconhecida, faz o reconhecimento por solicitador, advogado ou notário antes da recolha. Se o comprador for uma empresa, o Q3 leva os dados da empresa e o Q9 a assinatura do representante.",
+   "tip": "Pergunta à Tesla se no teu caso basta assinar no centro ou se tens de levá-lo já reconhecido."
+  },
+  "M01": {
+   "t": "Reserva do transportador",
+   "x": "Reserva a data com cerca de 2 semanas de antecedência. Com matrícula e chassis já costumam aceitar reservar. As saídas do barco costumam ser à sexta-feira.",
+   "tip": "Valor orientativo indicado pelo transportador: cerca de 580 € (confirmar)."
+  },
+  "M02": {
+   "t": "Cabos do carro",
+   "x": "Entrega os cabos no local indicado pelo transportador (referência: Póvoa de Santa Iria, cerca de 25 €), com contacto, nome e destino."
+  },
+  "M03": {
+   "t": "Carro vazio para o transporte",
+   "x": "Antes do transporte, confirma que o habitáculo, frunk e bagageira estão vazios. Remove objetos pessoais, acessórios soltos e tudo o que não deva ficar no veículo."
+  },
+  "M04": {
+   "t": "Bateria para o transporte",
+   "x": "Deixa carga suficiente para o transporte e a saída do carro."
   }
  }
 }

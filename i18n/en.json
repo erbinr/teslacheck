@@ -99,7 +99,8 @@
   "g-seat": "Seats and equipment",
   "g-scr": "Screens and connectivity",
   "g-chg": "Charging, accessories and travel",
-  "g-end": "Handover and first drives"
+  "g-end": "Handover and first drives",
+  "g-ship": "Shipping by sea to another island (if applicable)"
  },
  "prep": [
   {
@@ -140,7 +141,7 @@
   },
   "P02": {
    "t": "VIN",
-   "x": "The vehicle's VIN matches the order and the paperwork."
+   "x": "The vehicle's VIN matches the order and the paperwork. Check it is the same in the app, the paperwork, on the car and in the system, and that any extra options are correct."
   },
   "P03": {
    "t": "Licence plate",
@@ -157,11 +158,11 @@
   },
   "P06": {
    "t": "Mileage and battery",
-   "x": "Note both values; have enough charge for the first trip and for recharging."
+   "x": "Note both values; have enough charge for the first trip and for recharging. About 50 % is usually enough to leave: confirm enough range to reach your destination with a margin."
   },
   "E01": {
    "t": "Paint",
-   "x": "No scratches, dents, pronounced swirls or visible inclusions.",
+   "x": "No scratches, dents, pronounced swirls or visible inclusions. Also look for paint runs (drips), excessive orange peel, spots with no paint or bare metal (including stone chips) and dents. Use raking light for micro-scratches.",
    "tip": "With a torch at an angle you can spot swirls and dust specks under the paint."
   },
   "E02": {
@@ -171,7 +172,7 @@
   },
   "E03": {
    "t": "Panels and gaps",
-   "x": "Check fit of hood, doors, fenders and tailgate; look along the hood from the seat."
+   "x": "Check fit of hood, doors, fenders and tailgate; look along the hood from the seat. Run your hand over doors, bonnet and tailgate: no noticeable steps. Even gaps, continuous body lines and a left/right comparison (or with other cars being delivered)."
   },
   "E04": {
    "t": "Glass and roof",
@@ -179,16 +180,16 @@
   },
   "E05": {
    "t": "Headlights, tail lights and cameras",
-   "x": "Lenses clean, intact and seated; no water inside."
+   "x": "Lenses clean, intact and seated; no water inside. Headlights at the same height and gap; daytime running lights (DRL) level and symmetrical; switch on the dipped beams to check even lighting."
   },
   "E06": {
    "t": "Seals and trim",
-   "x": "Seals seated, no folds, cuts or loose areas; check the roof perimeter.",
+   "x": "Seals seated, no folds, cuts or loose areas; check the roof perimeter. Trims and skirts without scratches and with no abnormal gaps at the joints; compare with the opposite side.",
    "tip": "Look mainly at the seals between the glass roof and the body: they must not be twisted."
   },
   "E07": {
    "t": "Doors and handles",
-   "x": "Open and close all of them; check window fit where applicable.",
+   "x": "Open and close all of them; check window fit where applicable. Smooth opening and closing, with no effort or noise; door handles evenly aligned.",
    "tip": "When opening and closing, the window should drop and rise on its own without rubbing."
   },
   "E08": {
@@ -201,7 +202,7 @@
   },
   "E10": {
    "t": "Tyre pressure",
-   "x": "Check cold against the vehicle label and manual; do not use a universal figure."
+   "x": "Check cold against the vehicle label and manual; do not use a universal figure. Pressures consistent across all 4 tyres."
   },
   "E11": {
    "t": "Protections and cleanliness",
@@ -213,7 +214,7 @@
   },
   "I02": {
    "t": "Console and dashboard",
-   "x": "Surfaces, door panels and trim free of marks or loose parts."
+   "x": "Surfaces, door panels and trim free of marks or loose parts. Centre console free of noises: raise and lower the armrest and lean your leg lightly against the console to listen for creaks or loose parts."
   },
   "I03": {
    "t": "Steering wheel and controls",
@@ -225,7 +226,7 @@
   },
   "I05": {
    "t": "Headliner and sun visors",
-   "x": "Linings correctly fitted; no abnormal folds, stains or damage."
+   "x": "Linings correctly fitted; no abnormal folds, stains or damage. Pillar (A/B/C) fabric (grey) free of stains."
   },
   "I06": {
    "t": "Compartments and trunks",
@@ -245,7 +246,7 @@
   },
   "F03": {
    "t": "Interior lighting",
-   "x": "Test ceiling, reading, courtesy, glovebox, trunks and door puddle lights, as equipped."
+   "x": "Test ceiling, reading, courtesy, glovebox, trunks and door puddle lights, as equipped. Interior LEDs aligned."
   },
   "F04": {
    "t": "Power windows",
@@ -312,7 +313,7 @@
   },
   "T02": {
    "t": "Cameras and warnings",
-   "x": "Image available in all installed views; check any pending alert or calibration."
+   "x": "Image available in all installed views; check any pending alert or calibration. Image without distortion or visible obstructions."
   },
   "T03": {
    "t": "Audio and calls",
@@ -354,7 +355,7 @@
   },
   "C04": {
    "t": "Charging plan",
-   "x": "Locate the next stop and the recommended limit in the vehicle; check payment in the app."
+   "x": "Locate the next stop and the recommended limit in the vehicle; check payment in the app. Confirm whether Tesla offers free charging or free Supercharging."
   },
   "A01": {
    "t": "Order accessories",
@@ -439,7 +440,7 @@
   },
   "E13": {
    "t": "Underside and transport damage",
-   "x": "Look at the underside and bumpers without crawling under: knocks, scrapes or scratches from loading and unloading. Matters for the battery warranty.",
+   "x": "Look at the underside and bumpers without crawling under: knocks, scrapes or scratches from loading and unloading. Matters for the battery warranty. Also check the battery cover underneath: no scratches or damage.",
    "tip": "In Portugal some deliveries were postponed over bumpers scratched in transport."
   },
   "E14": {
@@ -485,6 +486,32 @@
   "S09": {
    "t": "If the car is shipped afterwards",
    "x": "If you will ship it (e.g. by sea), keep photos of its current condition and ask the carrier for conditions, documents and battery level required."
+  },
+  "E15": {
+   "t": "Bonnet, frunk and hinges",
+   "x": "Open the frunk and check under and along the sides of the bonnet, and the inside of the lid. Also check the boot hinges and the tailgate struts area."
+  },
+  "D08": {
+   "t": "Signature authentication on the RRA",
+   "x": "If the RRA signature must be authenticated, have it certified by a solicitador, lawyer or notary before pick-up. If the buyer is a company, Q3 holds the company details and Q9 the signature of its representative.",
+   "tip": "Ask Tesla whether, in your case, signing at the centre is enough or you must bring it already certified."
+  },
+  "M01": {
+   "t": "Carrier booking",
+   "x": "Book the date about 2 weeks ahead. With the plate and chassis number they usually accept the booking. Ship departures are usually on Fridays.",
+   "tip": "Indicative price given by the carrier: about €580 (to be confirmed)."
+  },
+  "M02": {
+   "t": "Car cables",
+   "x": "Hand the cables in at the place the carrier indicates (reference: Póvoa de Santa Iria, about €25), with contact, name and destination."
+  },
+  "M03": {
+   "t": "Empty car for transport",
+   "x": "Before transport, check that the cabin, frunk and boot are empty. Remove personal items, loose accessories and anything that should not stay in the car."
+  },
+  "M04": {
+   "t": "Battery for transport",
+   "x": "Leave enough charge for transport and for driving the car off."
   }
  }
 }

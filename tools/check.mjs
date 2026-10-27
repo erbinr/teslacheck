@@ -14,7 +14,7 @@ for(const l of langs){const s=new Set(keys(D[l]));
 const CL=J('checklist.json');let n=0,add=0;const ids=new Set();
 for(const s of CL.sections){for(const g of s.groups){for(const i of g.items){n++;i.added&&add++;
   if(ids.has(i.id))err('id duplicado '+i.id);ids.add(i.id);
-  if(i.added&&!i.src)err('sin fuente '+i.id);
+  if(i.added&&!i.src&&i.from!=='user')err('sin fuente '+i.id);
   for(const l of langs)if(!D[l].it[i.id])err(`${l}: falta ítem ${i.id}`);}
   for(const l of langs)if(!D[l].grp[g.id])err(`${l}: falta grupo ${g.id}`);}
   for(const l of langs)if(!D[l].sec[s.id])err(`${l}: falta sección ${s.id}`);}
